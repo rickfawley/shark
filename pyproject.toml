@@ -1,0 +1,4 @@
+[project]
+dependencies = [
+  "unsupervisedpy @ git+https://github.com/RCdeAmorim/unsupervisedpy.git"
+]

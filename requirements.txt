@@ -1,0 +1,13 @@
+# --- core scientific stack ---
+numpy>=1.23
+scipy>=1.10
+
+# for clustering metrics, dataset utilities, ARI etc.
+scikit-learn>=1.2
+
+# optional: plotting in the demo scripts (remove if not needed)
+#matplotlib>=3.7
+
+# --- unsupervisedpy: must come from the author’s GitHub ---
+# pinned to the GitHub repo by RC de Amorim
+git+https://github.com/RCdeAmorim/unsupervisedpy.git#egg=unsupervisedpy
