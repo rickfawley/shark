@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "SHARK: Shapley Reweighted k-means"
+message: "If you use SHARK, please cite:"
+authors:
+  - family-names: Fawley
+    given-names: Richard J.
+  - family-names: de Amorim
+    given-names: Renato Cordeiro
+version: 0.1.0
+doi: ""
+date-released: 2025-08-17
+url: https://github.com/rickfawley/shark
+preferred-citation:
+  type: article
+  title: "Shapley-Inspired Feature Weighting in k-means with No Additional Hyperparameters"
+  authors:
+    - family-names: Fawley
+      given-names: Richard J.
+    - family-names: de Amorim
+      given-names: Renato C.
+  year: 2025
+  notes: "arXiv:2508.07952"
