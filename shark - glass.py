@@ -33,7 +33,7 @@ from   datetime         import datetime
 experimentID     : str = r'Glass'
 noiseFeatures    : int = 0
 
-myDataFolder     : str = r'../../Data/renato_box_datasets/'
+myDataFolder     : str = r'../Data/'
 
 reportAccuracyDP : int = 3
 iterationCount   : int = 25
@@ -493,3 +493,4 @@ if __name__ == "__main__":
     print(f'Duration {str(duration).split(".")[0]} ({duration.total_seconds():.2f})')
 
 #end-main-processing
+
