@@ -2,3 +2,5 @@
 dependencies = [
   "unsupervisedpy @ git+https://github.com/RCdeAmorim/unsupervisedpy.git"
 ]
+license = { text = "MIT" }
+
