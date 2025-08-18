@@ -62,8 +62,7 @@ cd shark
 
 ## Generating Synthetic Datasets
 
-To reproduce the synthetic benchmarks described in the [SHARK paper](https://arxiv.org/abs/2508.07952), 
-the follwoing helper script has been provided:
+## To reproduce the synthetic benchmarks described in the [SHARK paper](https://arxiv.org/abs/2508.07952), the follwoing helper script has been provided:
 
 ```bash
 python scripts/generate_datasets.py --out ./data --n-repeats 50 --normalize range --seed 42
