@@ -31,7 +31,8 @@ from   datetime       import datetime
 experimentID     : str = r'Data5000x50_50k'
 noiseFeatures    : int = 25
 
-myDataFolder     : str = r'../Data/'
+myDataFolder     : str = r'data'
+myLogFolder      : str = r'logs'
 
 reportAccuracyDP : int = 3
 iterationCount   : int = 25
@@ -204,8 +205,8 @@ def loadData(
 
     labelsFileName = f"{experimentID}_{str(id)}_Labels.csv"
 
-    dataFile   = f"{myDataFolder}{experimentID}/{dataFileName}"
-    labelsFile = f"{myDataFolder}{experimentID}/{labelsFileName}"
+    dataFile   = f"{myDataFolder}/{experimentID}/{dataFileName}"
+    labelsFile = f"{myDataFolder}/{experimentID}/{labelsFileName}"
 
     print(f"{dataFile}")
     
@@ -304,7 +305,7 @@ def runExperiments_singleThreading(
     ):
 
     timestamp   = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    logFilename = f"{algorithm}_{experimentID}_{timestamp}.txt"
+    logFilename = f"{myLogFolder}/{algorithm}_{experimentID}_{timestamp}.txt"
     
     log(f"Experiment started: {timestamp}",logFilename)
     log(f"File core:          {experimentID}",logFilename)
@@ -395,7 +396,7 @@ def runExperiments_parallelProcessing(
     ):
 
     timestamp   = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    logFilename = f"{algorithm}_{experimentID}_{timestamp}.txt"
+    logFilename = f"{myLogFolder}/{algorithm}_{experimentID}_{timestamp}.txt"
     
     log(f"Experiment started: {timestamp}",logFilename)
     log(f"File core:          {experimentID}",logFilename)
@@ -481,4 +482,3 @@ if __name__ == "__main__":
     print(f'Duration {str(duration).split(".")[0]} ({duration.total_seconds():.2f})')
 
 #end-main-processing
-
